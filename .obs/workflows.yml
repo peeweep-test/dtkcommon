@@ -2,7 +2,7 @@ testbuild:
   steps:
     - set_flags:
         flags:
-        - type: build
+          - type: build
             status: enable
             project: home:Tsic:CI
             pacakge: dtkcommon
