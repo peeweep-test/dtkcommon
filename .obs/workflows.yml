@@ -15,4 +15,3 @@ pullrequest_check_build:
               - x86_64
   filters:
     event: pull_request
-
