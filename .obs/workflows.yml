@@ -1,5 +1,10 @@
 pullrequest_check_build:
   steps:
+    - link_package:
+        source_project: deepin:test:SRC
+        source_package: dtkcommon
+        target_project: deepin:test:CI
+ 
     - configure_repositories:
         project: deepin:test:CI
         repositories:
@@ -29,17 +34,7 @@ pullrequest_check_build:
               - x86_64
               - aarch64
               - riscv64
-          - name: Uos_20
-            paths:
-              - target_project: deepin:test:CI
-                target_repository: Arch_Community
-            architectures:
-              - x86_64
-           
-    - link_package:
-        source_project: deepin:test:SRC
-        source_package: dtkcommon
-        target_project: deepin:test:CI
+
   filters:
     event: pull_request
 
