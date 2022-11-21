@@ -1,4 +1,4 @@
-testbuild:
+pullrequest_check_build:
   steps:
     - configure_repositories:
         project: deepin:test:CI
