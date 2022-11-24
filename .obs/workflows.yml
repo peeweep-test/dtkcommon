@@ -10,7 +10,7 @@ pullrequest_check_build:
         repositories:
           - name: Deepin_20_Test
             paths:
-              - target_project: deepin:test:SRC
+              - target_project: deepin:test:OBSTEST:SRC
                 target_repository: Deepin_20_Test
             architectures:
               - x86_64
