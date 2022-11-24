@@ -1,3 +1,4 @@
+
 pullrequest_check_build:
   steps:
     - link_package:
@@ -15,3 +16,19 @@ pullrequest_check_build:
               - x86_64
   filters:
     event: pull_request
+
+rebuild_tag:
+  steps:
+    - trigger_services:
+        project: deepin:test:OBSTEST:TAG
+        package: dtkcommon
+  filters:
+    event: tag_push
+
+rebuild_push:
+  steps:
+    - trigger_services:
+        project: deepin:test:OBSTEST:SRC
+        package: dtkcommon
+  filters:
+    event: push
