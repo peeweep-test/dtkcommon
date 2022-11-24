@@ -8,10 +8,10 @@ pullrequest_check_build:
     - configure_repositories:
         project: deepin:test:OBSTEST:CI
         repositories:
-          - name: Deepin_20
+          - name: Deepin_20_Test
             paths:
               - target_project: deepin:test:SRC
-                target_repository: Deepin_20
+                target_repository: Deepin_20_Test
             architectures:
               - x86_64
   filters:
