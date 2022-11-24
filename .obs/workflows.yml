@@ -1,22 +1,16 @@
 pullrequest_check_build:
   steps:
     - link_package:
-        source_project: deepin:test:SRC
+        source_project: deepin:test:OBSTEST:SRC
         source_package: dtkcommon
-        target_project: deepin:test:CI
+        target_project: deepin:test:OBSTEST:CI
     - configure_repositories:
-        project: deepin:test:CI
+        project: deepin:test:OBSTEST:CI
         repositories:
-          - name: Arch_Community
+          - name: Deepin_20_Test
             paths:
               - target_project: deepin:test:SRC
-                target_repository: Arch_Community
-            architectures:
-              - x86_64
-          - name: Deepin_20
-            paths:
-              - target_project: deepin:test:SRC
-                target_repository: Deepin_20
+                target_repository: Deepin_20_Test
             architectures:
               - x86_64
   filters:
