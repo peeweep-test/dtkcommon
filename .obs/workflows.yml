@@ -19,9 +19,10 @@ pullrequest_check_build:
 
 rebuild_tag:
   steps:
-    - trigger_services:
-        project: deepin:test:OBSTEST:TAG
-        package: dtkcommon
+    - branch_package:
+        source_project: deepin:test:OBSTEST:SRC
+        source_package: dtkcommon
+        target_project: deepin:test:OBSTEST:TAG
   filters:
     event: tag_push
 
