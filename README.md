@@ -38,4 +38,3 @@ We encourage you to report issues and contribute changes
 ## License
 
 This project is licensed under [BSD-3-Clause](LICENSE).
-
