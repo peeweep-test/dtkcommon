@@ -12,7 +12,7 @@ jobs:
       - name: "CLA Assistant"
         if: (github.event.comment.body == 'recheck' || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA.') || github.event_name == 'pull_request_target'
         # use github app support version
-        uses: tsic404/contributor-assistant-github-action@partner_fix
+        uses: tsic404/contributor-assistant-github-action@parnter_fix
 
         env:
           APP_ID: 164400
