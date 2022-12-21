@@ -3,9 +3,3 @@ dtkcommon (5.6.81) unstable; urgency=medium
   * use CMakeLists.txt to build package
 
  -- Deepin Package Builder <packages@linuxdeepin.com>  Fri, 25 Jul 2022 17:09:40 +0800
-
-dtkcommon (0.0.1) unstable; urgency=medium
-
-  * ./debian
-
- -- Deepin Package Builder <packages@linuxdeepin.com>  Mon, 25 Jan 2021 16:01:40 +0800
