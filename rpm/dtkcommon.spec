@@ -1,5 +1,5 @@
 Name:    dtkcommon
-Version: 6.8.0
+Version: 6.8.1
 Release: 1
 Summary: dtk common files
 Source0: %{name}-%{version}.orig.tar.xz
